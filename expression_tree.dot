@@ -1,0 +1,15 @@
+digraph ExpressionTree {
+node [shape=circle];
+op0 [label="+"];
+"a" -> op0;
+"b" -> op0;
+op0 -> "t1";
+op1 [label="+"];
+"c" -> op1;
+"d" -> op1;
+op1 -> "t2";
+op2 [label="*"];
+"t1" -> op2;
+"e" -> op2;
+op2 -> "t3";
+}
